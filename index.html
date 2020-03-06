@@ -24,8 +24,8 @@
             <p id="mort">...</p>
         </div>
         <div class="card">
-            <h3>Guérie</h3>
-            <p id="guerie">...</p>
+            <h3>Guéris</h3>
+            <p id="gueris">...</p>
         </div>
     </div>
     <h5 class="updateInfo"><i>Mise à jour journalière</i></h5>
@@ -33,7 +33,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             const cas = document.getElementById("cas")
             const mort = document.getElementById("mort")
-            const guerie = document.getElementById("guerie")
+            const gueris = document.getElementById("gueris")
             axios.get('https://coronavirus-tracker-api.herokuapp.com/all')
                 .then(function (response) {
                     console.log(response);
@@ -53,7 +53,7 @@
 
                     });
                     anime({
-                        targets: guerie,
+                        targets: gueris,
                         innerHTML: [0, response.data.latest.recovered],
                         round: 1,
                         easing: 'easeInSine',
