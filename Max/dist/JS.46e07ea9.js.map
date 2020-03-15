@@ -1,0 +1,1 @@
+{"version":3,"sources":["JS/index.js"],"names":["mafonction","alert"],"mappings":"AAAA,IAAMA,UAAU,GAAG,SAAbA,UAAa,GAAM;AACrBC,EAAAA,KAAK,CAAC,OAAD,CAAL;AACH,CAFD","file":"JS.46e07ea9.js","sourceRoot":"..","sourcesContent":["const mafonction = () => {\r\n    alert(\"hello\")\r\n}"]}

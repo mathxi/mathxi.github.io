@@ -1,0 +1,3 @@
+const mafonction = () => {
+    alert("hello")
+}
