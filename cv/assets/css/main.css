@@ -1,0 +1,46 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  color: #e3e0e0;
+  font-family: "Montserrat", sans-serif !important;
+  background-color: #1c1c1d;
+}
+.img-container-hero {
+  padding: 20px;
+  background-color: #1c1c1d;
+  border-radius: 50%;
+  bottom: -60px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+}
+header {
+  position: relative;
+  padding-bottom: 280px;
+  margin-bottom: 50px;
+  background-color: #26262d;
+}
+#info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#info h2 {
+  font-size: 2rem;
+}
+
+.img-profile {
+  box-shadow: 0px 2px 11px #161515d4;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
+}
+.carousel{
+    width: 70%;
+}
+
+.carousel:nth-child(odd){
+    float: right;
+}
