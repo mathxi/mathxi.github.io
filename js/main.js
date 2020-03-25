@@ -9,6 +9,7 @@ function updateData() {
     const gueris = document.getElementById("gueris")
     axios.get('https://coronavirus-tracker-api.herokuapp.com/all')
         .then(function (response) {
+            console.log('response: ',response)
             const france = response.data.confirmed.locations.find(currentLocation => currentLocation.country == 'France')
 
             const datesOld = Object.keys(france.history)

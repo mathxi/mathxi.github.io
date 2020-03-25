@@ -1,3 +1,5 @@
+* {
+}
 body,
 html {
   margin: 0;
@@ -35,12 +37,21 @@ header {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-
 }
-.carousel{
-    width: 70%;
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.carousel:nth-child(odd){
-    float: right;
+.clear-right {
+  clear: right;
+}
+.part-title {
+}
+.item-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
 }
