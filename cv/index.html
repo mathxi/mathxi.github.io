@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <!-- slick css // carousel -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css" />
+
     <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
@@ -13,6 +17,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/main.css">
+
 </head>
 
 <body>
@@ -23,42 +28,99 @@
         </div>
         <div class="img-container-hero">
             <img src="./assets/img/mathieujanio.png" alt="Photo de Mathieu Janio" class="img-profile">
+            <div class="hover-content">
+                <ul>
+                    <li>Année de naissance: 1998</li>
+                    <li>Résidence: Nantes</li>
+                    <li>Ecole: EPSI</li>
+                </ul>
+            </div>
         </div>
     </header>
-    <div class="item-carousel">
-        <h2 class="part-title">Expérience professionnel</h2>
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="./assets/img/hublot.png"></a>
-            <a class="carousel-item" href="#two!"><img src="./assets/img/lengow.png"></a>
-            <a class="carousel-item" href="#three!"><img src="./assets/img/logoCaseProof.png"></a>
+    <!-- <h2>Expériences professionnel</h2> -->
+    <div class="projects_container">
+        <div class="card_container">
+            <img src="./assets/img/rezocean.jpg" class="card_img" alt="img projet">
+            <div class="card_content">
+                <h3>Installateur fibre optique</h3>
+                <p>
+                    Entreprise de telecom Rezocean à été l'entreprise qui m'as enseigné le goût du travail.
+                    A leurs côté j'ai pu non pas apprendre des compétences en développement mais entrer dans le monde du
+                    travail au côté de personnes compétentes et attentives.
+                </p>
+            </div>
+        </div>
+        <div class="card_container">
+            <img src="./assets/img/logoCaseProof.png" class="card_img" alt="img projet" style="padding:20px 40px">
+            <div class="card_content">
+                <h3>Développeur full stack</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Sit amet massa vitae tortor condimentum lacinia quis vel. Amet massa vitae
+                    tortor
+                    condimentum lacinia quis vel eros donec. In ante metus dictum at tempor commodo. Vulputate odio ut
+                    enim
+                    blandit.
+                </p>
+            </div>
+        </div>
+        <div class="card_container">
+            <img src="./assets/img/hublot.png" class="card_img" alt="img projet">
+            <div class="card_content">
+                <h3>Développeur vue js</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Sit amet massa vitae tortor condimentum lacinia quis vel. Amet massa vitae
+                    tortor
+                    condimentum lacinia quis vel eros donec. In ante metus dictum at tempor commodo. Vulputate odio ut
+                    enim
+                    blandit.
+                </p>
+            </div>
+        </div>
+        <div class="card_container">
+            <img src="./assets/img/lengow.png" class="card_img" alt="img projet">
+            <div class="card_content">
+                <h3>Développeur Symfony</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Sit amet massa vitae tortor condimentum lacinia quis vel. Amet massa vitae
+                    tortor
+                    condimentum lacinia quis vel eros donec. In ante metus dictum at tempor commodo. Vulputate odio ut
+                    enim
+                    blandit.
+                </p>
+            </div>
         </div>
     </div>
-    <div class="right item-carousel">
-        <h2 class="part-title">Expérience professionnel</h2>
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="./assets/img/mathieujanio.png"></a>
-            <a class="carousel-item" href="#two!"><img src="./assets/img/mathieujanio.png"></a>
-            <a class="carousel-item" href="#three!"><img src="./assets/img/mathieujanio.png"></a>
-            <a class="carousel-item" href="#four!"><img src="./assets/img/mathieujanio.png"></a>
-            <a class="carousel-item" href="#five!"><img src="./assets/img/mathieujanio.png"></a>
+
+    <!-- <h2>Cursus scolaire</h2> -->
+    <div class="cursus_container">
+        <div class="cursus_card">
+            <div class="image_cursus"></div>
+            <div class="cursus_content">
+                <h3>Bac pro SEN</h3>
+                <p>Expérience lycéenne m'ayant inculqué le goût du savoir ainsi que le goût de l'informatique.
+                    Le niveau n'était pas haut mais il avait le mérite d'être inspirant
+                </p>
+            </div>
+        </div>
+        <div class="cursus_card">
+            <div class="image_cursus"></div>
+            <div class="cursus_content">
+                <h3>Ingénieurie informatique</h3>
+                <p>Expérience lycéenne m'ayant inculqué le goût du savoir ainsi que le goût de l'informatique.
+                    Le niveau n'était pas haut mais il avait le mérite d'être inspirant
+                </p>
+            </div>
         </div>
     </div>
-    <div class="clear-right item-carousel">
-        <h2 class="part-title">Expérience professionnel</h2>
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="./assets/img/mathieujanio.png"></a>
-            <a class="carousel-item" href="#two!"><img src="./assets/img/mathieujanio.png"></a>
-            <a class="carousel-item" href="#three!"><img src="./assets/img/mathieujanio.png"></a>
-            <a class="carousel-item" href="#four!"><img src="./assets/img/mathieujanio.png"></a>
-            <a class="carousel-item" href="#five!"><img src="./assets/img/mathieujanio.png"></a>
-        </div>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.carousel');
-            var instances = M.Carousel.init(elems);
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
 </body>
 
 </html>

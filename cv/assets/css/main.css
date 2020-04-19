@@ -1,12 +1,16 @@
 * {
+  transition: all 0.5s ease;
+  font-family: "Montserrat", sans-serif !important;
 }
 body,
 html {
   margin: 0;
   padding: 0;
   color: #e3e0e0;
-  font-family: "Montserrat", sans-serif !important;
   background-color: #1c1c1d;
+}
+h3 {
+  font-size: 2.42rem;
 }
 .img-container-hero {
   padding: 20px;
@@ -48,10 +52,174 @@ header {
 }
 .part-title {
 }
+.img-container-hero:hover .hover-content,
+.hover-content:before {
+  display: block;
+  animation: fadeInHover 0.5s ease forwards;
+}
+.hover-content {
+  display: none;
+  background-color: #26262d;
+  position: absolute;
+  box-shadow: 0px 4px 17px 3px rgba(0, 0, 0, 0.39);
+  z-index: 998;
+  width: 150%;
+  height: 300px;
+  padding: 100px 100px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+}
+.hover-content:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 30px solid #26262d;
+  position: absolute;
+  top: 0;
+  transform: translateX(50%) translateY(-100%);
+  right: 50%;
+}
+
+@keyframes fadeInHover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .item-carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 70%;
+}
+.logo-etudes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 400px;
+}
+
+.card_container {
+  height: 230px;
+  box-shadow: 0px 4px 17px 3px rgba(0, 0, 0, 0.39);
+  position: relative;
+  padding-top: 40px;
+  z-index: 1;
+  border-radius: 5px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+.card_container:hover .card_img {
+  transform: translateY(-15px);
+  box-shadow: 0px 10px 11px 5px rgba(0, 0, 0, 0.81);
+}
+
+.card_container:hover {
+  height: 400px;
+}
+
+.card_container:hover p {
+  display: block;
+  animation: fadinInOpacity ease 1.5s forwards;
+}
+
+@keyframes fadinInOpacity {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+.card_img {
+  position: absolute;
+  width: 70%;
+  top: -70px;
+  margin-left: 15%;
+  z-index: 15;
+  box-shadow: 0px 8px 11px 0px rgba(0, 0, 0, 0.48);
+  border-radius: 20px;
+  background-color: #1c1c1d;
+}
+
+.card_content {
+  padding: 40px 20px;
+}
+
+.card_content h3 {
+  color: rgb(228, 228, 228);
+  text-align: center;
+}
+
+.card_content p {
+  display: none;
+  opacity: 0;
+  color: rgb(199, 199, 199);
+}
+
+.cursus_container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.cursus_card {
+  width: 800px;
+  height: 300px;
+  margin: 30px auto;
+  box-shadow: 0px 4px 17px 3px rgba(0, 0, 0, 0.39);
+  display: flex;
+  flex-direction: row;
+}
+.image_cursus {
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(0.5);
+  height: 100%;
+  position: relative;
+}
+
+.cursus_card:nth-child(1) .image_cursus {
+  background-image: url("../img/SMP.jpg");
+}
+.cursus_card:nth-child(2) .image_cursus {
+  background-image: url("../img/epsi.png");
+}
+.image_cursus:before {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  top: 0;
+  left: 50%;
+  z-index: 900;
+  background-color: #1c1c1d;
+  content: "";
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  border: solid #1c1c1d 1px;
+}
+.cursus_content {
+  width: 50%;
+  padding: 10px;
 }
