@@ -229,6 +229,7 @@ header {
     width: 325px;
   }
   .cursus_card {
+    height: 400px;
     width: 300px;
     flex-direction: column;
   }
